@@ -1,0 +1,14 @@
+spring:
+  config:
+    activate:
+      on profile: "prod"
+build:
+  version: "1.0"
+accounts:
+  message: "Welcome to EazyBank accounts related PROD APIs"
+  contactDetails:
+    name: "Rajesh Roy-product owner"
+    email: "rajeshroy@eazybank.com"
+  onCallSupport:
+    - (555)-777-134
+    - (555)723-1345
