@@ -4,16 +4,25 @@ spring:
   profiles:
     active: git
 #    active: native
-
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
   cloud:
     config:
       server:
         git:
-          uri: "https://github.com/eazybytes/eazybytes-config.git"
+          uri: "https://github.com/rajeshrathode0007/config-main.git"
           timeout: 5
           clone-on-start: true
           default-label: main
           force-pull: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 encrypt:
   key: "45D81EC1EF61DF9AD8D3E5BB397F9"
 #        native:
