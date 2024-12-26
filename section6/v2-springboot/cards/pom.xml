@@ -108,7 +108,7 @@
                 <configuration>
                     <to>
                         <image>
-                            eazybytes/{project.artifactId}:s6
+                            rajeshderangula/${project.artifactId}:s6
                         </image>
                     </to>
                 </configuration>
